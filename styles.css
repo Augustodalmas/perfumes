@@ -1,0 +1,128 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('image/Fundo.jpeg') no-repeat center center/cover;
+            color: #fff;
+            text-align: left;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 0 0 20px;
+        }
+
+        .hero button {
+            background-color: #fff;
+            border: none;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .products {
+            padding: 50px 0;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+
+        .product-item p {
+            margin: 0 0 10px;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        #contactForm {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        #contactForm button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }

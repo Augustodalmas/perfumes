@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/icone.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Perfumes</h1>
+        </div>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <div class="container">
+                <h2>Descubra a Essência da Elegância</h2>
+                <p>Perfumes selecionados para ocasiões especiais.</p>
+                <button onclick="scrollToSection('products')">Explore Agora</button>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="product-grid">
+                    <!-- Produtos adicionados manualmente -->
+                    <div class="product-item">
+                        <img src="image/perfume1.png" alt="Perfume 1">
+                        <h3>Nome do Produto 1</h3>
+                        <p>Descrição do Produto 1</p>
+                        <p>Preço Original: R$100,00</p>
+                        <p>Preço com Desconto: R$80,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume2.png" alt="Perfume 2">
+                        <h3>Nome do Produto 2</h3>
+                        <p>Descrição do Produto 2</p>
+                        <p>Preço Original: R$120,00</p>
+                        <p>Preço com Desconto: R$90,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume3.png" alt="Perfume 3">
+                        <h3>Nome do Produto 3</h3>
+                        <p>Descrição do Produto 3</p>
+                        <p>Preço Original: R$130,00</p>
+                        <p>Preço com Desconto: R$100,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume4.png" alt="Perfume 4">
+                        <h3>Nome do Produto 4</h3>
+                        <p>Descrição do Produto 4</p>
+                        <p>Preço Original: R$140,00</p>
+                        <p>Preço com Desconto: R$110,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume5.png" alt="Perfume 5">
+                        <h3>Nome do Produto 5</h3>
+                        <p>Descrição do Produto 5</p>
+                        <p>Preço Original: R$150,00</p>
+                        <p>Preço com Desconto: R$120,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume6.png" alt="Perfume 6">
+                        <h3>Nome do Produto 6</h3>
+                        <p>Descrição do Produto 6</p>
+                        <p>Preço Original: R$160,00</p>
+                        <p>Preço com Desconto: R$130,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume7.png" alt="Perfume 7">
+                        <h3>Nome do Produto 7</h3>
+                        <p>Descrição do Produto 7</p>
+                        <p>Preço Original: R$170,00</p>
+                        <p>Preço com Desconto: R$140,00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="image/perfume8.png" alt="Perfume 8">
+                        <h3>Nome do Produto 8</h3>
+                        <p>Descrição do Produto 8</p>
+                        <p>Preço Original: R$180,00</p>
+                        <p>Preço com Desconto: R$150,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Encomendar perfumes</h2>
+                <form id="contactForm" onsubmit="sendWhatsAppMessage(event)">
+                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                    <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                    <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    
+        <script>
+            function sendWhatsAppMessage(event) {
+                event.preventDefault(); // Evita que o formulário seja enviado de maneira convencional
+    
+                // Pegando os valores dos campos do formulário
+                var nome = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var mensagem = document.getElementById('message').value;
+    
+                // Construindo a mensagem
+                var textoMensagem = `Nome: ${nome}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
+    
+                // Número do WhatsApp para onde a mensagem será enviada (incluir o código do país, por exemplo: 55 para Brasil)
+                var numeroWhatsApp = '+5554984096156';
+    
+                // Construindo o link do WhatsApp
+                var linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoMensagem}`;
+    
+                // Redirecionando o usuário para o link do WhatsApp
+                window.open(linkWhatsApp, '_blank');
+            }
+        </script>
+</body>
+</html>
