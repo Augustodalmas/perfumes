@@ -15,11 +15,3 @@ Tecnologias Utilizadas:
 🎨 HTML e CSS: Utilizados para estruturação e estilização da página, garantindo um layout atraente e responsivo.
 
 🔗 JavaScript: Implementa funcionalidades interativas como redirecionamento para o WhatsApp ao enviar um pedido através do formulário de contato.
-
-Como Contribuir:
-
-Sinta-se à vontade para fazer um fork deste repositório, explorar e modificar conforme necessário para ajustar ao seu próprio catálogo de perfumes ou para aprendizado e desenvolvimento contínuo.
-
-Contato:
-
-Para qualquer dúvida ou sugestão, entre em contato diretamente. Estamos aqui para ajudar a tornar a experiência com perfumes ainda mais especial e personalizada.
